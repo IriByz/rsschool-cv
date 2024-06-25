@@ -3,20 +3,20 @@
 ### Contacts
 
 
-**Email:** byzovairina@gmail.com
-**Phone:** +375 29 506 24 25
-**Git:**  [IriByz](https://github.com/IriByz)
-**Discord:**  byzovairina
+**Email:** byzovairina@gmail.com  
+**Phone:** +375 29 506 24 25  
+**Git:**  [IriByz](https://github.com/IriByz)  
+**Discord:**  byzovairina  
 
 --- 
 ### About me
-I started learning programming when I was 10 years old. Since that time, I've tried a lot of programming languages and technologies.
+I started learning programming when I was 10 years old. Since that time, I've tried a lot of programming languages and technologies.  
 For some reason I had some break, and now I want to deepen my knowledge in JavaScript and related topics.
 
 ---
 ### Skills
--Progress 4GL
--GIT
+-  Progress 4GL  
+-  GIT
 
 ---
 ### Code Example
