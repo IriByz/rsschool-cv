@@ -15,8 +15,9 @@ For some reason I had some break, and now I want to deepen my knowledge in JavaS
 
 ---
 ### Skills
- - Progress 4GL
- - GIT
+-Progress 4GL
+-GIT
+
 ---
 ### Code Example
 ```
@@ -30,15 +31,20 @@ function toBinary(n){
   return Number(res);
 }
 ```
+
 ---
 ### Experience
 -  **2014 - 2022** - _COINS LTD - backend developer_
+
 ---
+
 ### Projects
 -  **[CV#1. Markdown & Git](https://iribyz.github.io/rsschool-cv/cv)**
+
 --- 
 ### Education
 - **2009 - 2014** - _Vitebsk State University after P.M. Masherov  -  Faculty of Applied Mathematics and Information Technologies_
+
 --- 
 ### Languages
 -  **Russian** - _native speaker_
