@@ -1,1 +1,1 @@
-# rsschool-cv
+https://iribyz.github.io/rsschool-cv/
