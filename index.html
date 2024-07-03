@@ -3,8 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IriByz CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main-block">
+        <header class="header-cv">
+            <img src="./images/cv_avatar_faceless.jpg" alt="cv avatar" width="200" height="200">
+            <div class="header-cv-text-info">
+              <h1> Irina Byzova </h1>
+              <h2> Developer </h2>
+            </div>
+        </header>
+        <nav class="nav-cv">
+            <ul>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code-example">Code Example</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+        <main class="main-cv">
+            <div class="main-cv-blocks">
+                <h2 id="contacts">Contacts</h2>
+                <ul class="contacts-list">
+                    <li>Email: <a href="mailto:byzovairina@gmail.com">byzovairina@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+375295062425">+375 29 506 24 25</a></li>
+                    <li>Git: <a href="https://github.com/IriByz">IriByz</a></li>
+                    <li>Discord: byzovairina</li>
+                </ul>
+            </div>
+            <div class="main-cv-blocks">
+                <h2 id="about-me">About me</h2>
+                <p>I started learning programming when I was 10 years old. Since that time, I’ve tried a lot of programming languages and technologies. </p>
+                <p>For some reason I had some break, and now I want to deepen my knowledge in JavaScript and related topics. </p>
+            </div>
+            <div class="main-cv-blocks">
+                <h2 id="skills">Skills</h2>
+                <ul>
+                    <li>Progress 4GL</li>
+                    <li>GIT</li>
+                </ul>
+            </div>
+            <div class="main-cv-blocks">
+                <h2 id="code-example">Code Example</h2>
+                <pre>
+                    <code>
+        function toBinary(n){
+            let res = "";
+            while (n > 0) {
+            res = String(n % 2) + res;
+            n = Math.floor(n / 2);
+            }                            
+            return Number(res);
+        }
+                    </code>
+                </pre>
+            </div>
+            <div class="main-cv-blocks">
+                <h2 id="experience">Experience</h2>
+                <ul>
+                    <li><b>2014 - 2022</b> - <i>COINS LTD - backend developer</i></li>
+                </ul>
+            </div>
+            <div class="main-cv-blocks">
+                <h2 id="projects">Projects</h2>
+                <ul>
+                    <li><a href="https://iribyz.github.io/rsschool-cv/cv" target="_blank">CV#1. Markdown & Git</a></li>
+                </ul>
+            </div>
+            <div class="main-cv-blocks">
+                <h2 id="education">Education</h2>
+                <ul>
+                    <li><b>2009 - 2014</b> - <i>Vitebsk State University after P.M. Masherov - Faculty of Applied Mathematics and Information Technologies</i></li>
+                </ul>
+            </div>
+            <div class="main-cv-blocks">
+                <h2 id="languages">Languages</h2>
+                <ul>
+                    <li><b>Russian</b> - <i>native speaker</i></li>
+                    <li><b>English</b> - <i>B2</i></li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer-cv">
+            <div class="footer-block">
+                <a href="https://github.com/IriByz" target="_blank">Git Hub</a>
+            </div>
+            <div class="footer-block">
+                <p>by Irina Byzova 2024</p>
+            </div>
+            <div class="footer-block">
+                <a href="https://rs.school/courses/javascript-preschool-ru"><img src="./images/RS_logo.svg" alt="RS School" width="50" height="50"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
