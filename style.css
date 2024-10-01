@@ -1,23 +1,144 @@
+:root {
+    --gray: #9D9D93;
+    --plum: #52263F;
+    --font-family: "Manrope", sans-serif;
+    --second-family: "Montserrat", sans-serif;
+    --third-family: "Content", sans-serif;
+    --font3: "Bebas Neue", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #c8d5f2;
+    background-color: #CECEC7;
  }
 
 .main-block {
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 1280px;
     background-color: #f2e5c8;
     margin: auto;
-    padding: 10px;
+    border-radius: 1rem;
 }
 
 .header-cv {
     display: flex;
+    background-color: var(--gray);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 485px;
 }
 
-.header-cv img {
-    margin: 10px;
+.header-cv-text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+.location-header {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+}
+
+#cv-avatar {
+    margin: 40px;
+    border: 20px solid #fff;
+    width: 408px;
+    height: 461px;
+}
+
+#cv-name {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 117px;
+    line-height: 100%;
+    letter-spacing: 0.09em;
+    text-align: center;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 4px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+#job-title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #52263f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+}
+
+.contacts-list-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.contacts-list-header li {
+    list-style-type: none;
+}
+
+.header-contacts {
+    margin-top: 30px;
+}
+
+.header-contacts-img {
+    width: 40px;
+}
+
+.header-contacts-item {
+    display: flex;
+    flex-direction: column;
+    width: 187px;
+    align-items: center;
+    border-right: 2px solid #fff;
+    gap: 9px;
+}
+
+.contacts-list-header li:last-child .header-contacts-item {
+    border: none;
+}
+
+.contacts-list-header li:first-child .header-contacts-item {
+    gap: 14px
+}
+
+.header-contact-link-item {
+    text-decoration: none;
+}
+
+.header-contact-link {
+    text-decoration: none;
+    font-family: var(--second-family);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+    margin: 3px;
+}
+
+.nav-cv {
+    width: 61%;
+    margin-right: 1%;
+    margin-left: auto;
+}
+
 
 .nav-cv ul {
     display: flex;
@@ -28,8 +149,18 @@ body {
     list-style-type: none;
 }
 
+.nav-cv ul li a {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--plum)
+}
+
+
 .main-cv-blocks {
-    box-shadow: 1px 1px 2px #b8b8ba;
     padding: 10px;
     margin: 0 0 10px 0;
 }
@@ -40,7 +171,71 @@ body {
 
 .footer-cv {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 10px 0 0 0;
+    background-color: var(--gray);
+}
+
+.main-cv {
+    display: flex;
+}
+
+.main-left {
+    width: 36%;
+    padding-left: 2%;
+    border-right: 1px dotted var(--plum);
+    margin-top: 15px;
+}
+
+.main-right {
+    width: 59%;
+    margin-left: 30px;
+}
+
+.main-cv-blocks h2 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--plum);
+}
+
+.main-paragraph, .list-item, .footer-text {
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 170%;
+    color: #2f2f2f;
+}
+
+code {
+    font-size: 17px;
+}
+
+pre {
+    background-color: #fff;
+    box-shadow: inset 2px 2px 3px #b8b8ba;
+    padding-left: 25px;
+}
+
+.skills-item {
+    display: block;
+    width: auto;
+    background: #606366;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #fff;
+    padding: 5px;
+}
+
+.skills {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
