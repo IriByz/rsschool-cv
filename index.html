@@ -4,15 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IriByz CV</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-block">
         <header class="header-cv">
-            <img src="./images/cv_avatar_faceless.jpg" alt="cv avatar" width="200" height="200">
+            <img id="cv-avatar" src="./images/20240711_235702.jpg" alt="IriByz photo" width="453" height="497">
             <div class="header-cv-text-info">
-              <h1> Irina Byzova </h1>
-              <h2> Developer </h2>
+              <h1 id="cv-name"> Irina Byzova </h1>
+              <h2 id="job-title">Software Developer </h2>
+              <p class="location-header"><img src="./images/location-sign-svgrepo-com.png" alt="locaion" width="30" height="30">Vitebsk, Belarus</p>
+              <div class="header-contacts" id="contacts">
+                <ul class="contacts-list-header">
+                    <li>
+                        <a href="mailto:byzovairina@gmail.com" class="header-contact-link-item" target="_blank">
+                            <div class="header-contacts-item">
+                                <img src="./images/email.png" alt="email" class="header-contacts-img">
+                                <p class="header-contact-link">ByzovaIrina@gmail.com</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+375295962425" class="header-contact-link-item" target="_blank">
+                            <div class="header-contacts-item">
+                                <img src="./images/links.png" alt="phone" class="header-contacts-img">
+                                <p class="header-contact-link">+375&nbsp;(29)&nbsp;596&nbsp;24&nbsp;25</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://discordapp.com/users/964594750453846027" class="header-contact-link-item">
+                            <div class="header-contacts-item">
+                                <img src="./images/discord-round-black-icon.png" alt="" class="header-contacts-img">
+                                <p class="header-contact-link">@byzovairina</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IriByz" class="header-contact-link-item" target="_blank">
+                            <div class="header-contacts-item">
+                                <img src="./images/github-logo-6532.png" alt="github" class="header-contacts-img">
+                                <p class="header-contact-link">IriByz</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+              </div>
             </div>
         </header>
         <nav class="nav-cv">
@@ -28,74 +70,82 @@
             </ul>
         </nav>
         <main class="main-cv">
-            <div class="main-cv-blocks">
-                <h2 id="contacts">Contacts</h2>
-                <ul class="contacts-list">
-                    <li>Email: <a href="mailto:byzovairina@gmail.com">byzovairina@gmail.com</a></li>
-                    <li>Phone: <a href="tel:+375295062425">+375 29 506 24 25</a></li>
-                    <li>Git: <a href="https://github.com/IriByz">IriByz</a></li>
-                    <li>Discord: byzovairina</li>
-                </ul>
+            <div class="main-left">
+                <div class="main-cv-blocks">
+                    <h2 id="skills">Skills</h2>
+                    <ul class="skills">
+                        <li class="list-item skills-item">Progress 4GL</li>
+                        <li class="list-item skills-item">GIT</li>
+                        <li class="list-item skills-item">Figma</li>
+                        <li class="list-item skills-item">JavaScript</li>
+                        <li class="list-item skills-item">HTML</li>
+                        <li class="list-item skills-item">CSS</li>
+                        <li class="list-item skills-item">Web Services</li>
+                        <li class="list-item skills-item">SQL</li>
+                    </ul>
+                </div>
+                <div class="main-cv-blocks">
+                    <h2 id="languages">Languages</h2>
+                    <ul>
+                        <li class="list-item"><b>Russian</b> - <i>native speaker</i></li>
+                        <li class="list-item"><b>English</b> - <i>B2</i></li>
+                        <li class="list-item"><b>Spanish</b> - <i>A2</i></li>
+                    </ul>
+                </div>
             </div>
-            <div class="main-cv-blocks">
-                <h2 id="about-me">About me</h2>
-                <p>I started learning programming when I was 10 years old. Since that time, I’ve tried a lot of programming languages and technologies. </p>
-                <p>For some reason I had some break, and now I want to deepen my knowledge in JavaScript and related topics. </p>
-            </div>
-            <div class="main-cv-blocks">
-                <h2 id="skills">Skills</h2>
-                <ul>
-                    <li>Progress 4GL</li>
-                    <li>GIT</li>
-                </ul>
-            </div>
-            <div class="main-cv-blocks">
-                <h2 id="code-example">Code Example</h2>
-                <pre>
-                    <code>
-        function toBinary(n){
-            let res = "";
-            while (n > 0) {
-            res = String(n % 2) + res;
-            n = Math.floor(n / 2);
-            }                            
-            return Number(res);
-        }
-                    </code>
-                </pre>
-            </div>
-            <div class="main-cv-blocks">
-                <h2 id="experience">Experience</h2>
-                <ul>
-                    <li><b>2014 - 2022</b> - <i>COINS LTD - backend developer</i></li>
-                </ul>
-            </div>
-            <div class="main-cv-blocks">
-                <h2 id="projects">Projects</h2>
-                <ul>
-                    <li><a href="https://iribyz.github.io/rsschool-cv/cv" target="_blank">CV#1. Markdown & Git</a></li>
-                </ul>
-            </div>
-            <div class="main-cv-blocks">
-                <h2 id="education">Education</h2>
-                <ul>
-                    <li><b>2009 - 2014</b> - <i>Vitebsk State University after P.M. Masherov - Faculty of Applied Mathematics and Information Technologies</i></li>
-                </ul>
-            </div>
-            <div class="main-cv-blocks">
-                <h2 id="languages">Languages</h2>
-                <ul>
-                    <li><b>Russian</b> - <i>native speaker</i></li>
-                    <li><b>English</b> - <i>B2</i></li>
-                </ul>
+            <div class="main-right">
+                <div class="main-cv-blocks">
+                    <h2 id="about-me">About me</h2>
+                    <p class="main-paragraph">I started learning programming when I was 10 years old. Since that time, I’ve tried a lot of programming languages and technologies. </p>
+                    <p class="main-paragraph">For some reason I had some break, and now I want to deepen my knowledge in JavaScript and related topics. </p>
+                </div>
+                <div class="main-cv-blocks">
+                    <h2 id="experience">Experience</h2>
+                    <ul>
+                        <li class="list-item"><b>2014 - 2022</b> - <i>COINS LTD - backend developer</i></li>
+                        <li class="list-item"><b>2013 - 2014</b> - <i>Freelance - web developer</i></li>
+                    </ul>
+                </div>
+                <div class="main-cv-blocks">
+                    <h2 id="education">Education</h2>
+                    <ul>
+                        <li  class="list-item"><b>2009 - 2014</b> - <i>Vitebsk State University after P.M. Masherov - Faculty of Applied Mathematics and Information Technologies</i></li>
+                    </ul>
+                </div>
+                <div class="main-cv-blocks">
+                    <h2 id="projects">Projects</h2>
+                    <ul>
+                        <li class="list-item"><a href="https://iribyz.github.io/rsschool-cv/" target="_blank" class="cv-link">CV#1. Markdown &amp; Git</a></li>
+                        <li class="list-item"><a href="https://rolling-scopes-school.github.io/iribyz-JSFEPRESCHOOL2024Q2/shelter/index.html" target="_blank" class="cv-link">Shelter</a></li>
+                        <li class="list-item"><a href="https://iribyz.github.io/cssMemeSlider/cssMemeSlider/index.html" class="cv-link">CSS Meme Slider</a></li>
+                        <li class="list-item"><a href="https://rolling-scopes-school.github.io/iribyz-JSFEPRESCHOOL2024Q2/audio-player/index.html" target="_blank" class="cv-link">Audio Player</a></li>
+                        <li class="list-item"><a href="https://rolling-scopes-school.github.io/iribyz-JSFEPRESCHOOL2024Q2/image-gallery/index.html" target="_blank" class="cv-link">Image Gallery</a></li>
+                        <li class="list-item"><a href="https://rolling-scopes-school.github.io/iribyz-JSFEPRESCHOOL2024Q2/random-game/index.html" target="_blank" class="cv-link">Wolf &amp; Eggs</a></li>
+                    </ul>
+                </div>
+                <div class="main-cv-blocks">
+                    <h2 id="code-example">Code Example</h2>
+                    <pre>
+                        <code>
+function toBinary(n){
+    let res = "";
+    while (n &gt; 0) {
+    res = String(n % 2) + res;
+    n = Math.floor(n / 2);
+    }                            
+    return Number(res);
+}
+                        </code>
+                    </pre>
+                </div>
             </div>
         </main>
         <footer class="footer-cv">
             <div class="footer-block">
-                <a href="https://github.com/IriByz" target="_blank">Git Hub</a>
+                <a href="https://github.com/IriByz" target="_blank" class="footer-text">Git Hub</a>
             </div>
             <div class="footer-block">
-                <p>by Irina Byzova 2024</p>
+                <p class="footer-text">by Irina Byzova 2024</p>
             </div>
             <div class="footer-block">
                 <a href="https://rs.school/courses/javascript-ru"><img src="./images/rsschool-logo.svg" alt="RS School" width="50" height="50"></a>
